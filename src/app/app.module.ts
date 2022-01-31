@@ -5,6 +5,7 @@ import {CardModule} from 'primeng/card';
 import {MenubarModule} from 'primeng/menubar';
 import { SalesModule } from './sales/sales.module';
 import { SharedModule } from './shared/shared.module';
+import { AppRouterModule } from './app.routing.module';
 
 import { AppComponent } from './app.component';
 
@@ -18,7 +19,8 @@ import { AppComponent } from './app.component';
     CardModule,
     MenubarModule,
     SalesModule,
-    SharedModule
+    SharedModule,
+    AppRouterModule
     
   ],
   providers: [],
