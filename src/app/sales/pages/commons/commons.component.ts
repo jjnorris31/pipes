@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommonsComponent implements OnInit {
 
+  public today = new Date();
+
   constructor() { }
 
   ngOnInit(): void {

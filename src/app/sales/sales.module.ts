@@ -4,8 +4,7 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { CommonsComponent } from './pages/commons/commons.component';
 import { CustomsComponent } from './pages/customs/customs.component';
-
-
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,8 @@ import { CustomsComponent } from './pages/customs/customs.component';
     CustomsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CardModule
   ],
   exports: [
     NumbersComponent,
