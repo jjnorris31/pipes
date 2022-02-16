@@ -1,1 +1,59 @@
-<p>no-commons works!</p>
+<div class="text-layout">
+    <h1>Not common Pipes</h1>
+    <p>
+        Pipes that are included in Angular
+    </p>
+</div>
+
+<div class="grid">
+
+    <div class="col p-md-6">
+        <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+            <p>Hi {{eventType | i18nSelect : eventMap}}! Welcome to our party {{name}}</p>
+            <p-button label="Change"
+                      (onClick)="changeEvent()">
+            </p-button>
+        </p-fieldset>
+    </div>
+
+    <div class="col p-md-6">
+        <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+            <p>We have {{clients.length | i18nPlural : clientsMap}} waiting for us</p>
+            <p-button label="Delete client"
+                      (onClick)="deleteClient()">
+            </p-button>
+        </p-fieldset>
+    </div>
+
+    <div class="col p-md-6">
+        <p-fieldset legend="Slice Pipe" [toggleable]="true">
+            <p>[ {{clients | slice:0:2 }} ]</p>
+            <p>[ {{clients }} ]</p>
+        </p-fieldset>
+    </div>
+
+    <div class="col p-md-6">
+        <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+            <p *ngFor="let item of student | keyvalue">
+                {{item.key}} : {{item.value}}
+            </p>
+        </p-fieldset>
+    </div>
+
+    <div class="col p-md-6">
+        <p-fieldset legend="JSON Pipe" [toggleable]="true">
+            <p>
+                {{student | json}}
+            </p>
+        </p-fieldset>
+    </div>
+
+    <div class="col p-md-6">
+        <p-fieldset legend="Async Pipe" [toggleable]="true">
+            <pre *ngIf="!(myObservable | async)">Cargando...</pre>
+            <p *ngIf="myObservable | async">
+                {{myObservable | async}}
+            </p>
+        </p-fieldset>
+    </div>
+</div>

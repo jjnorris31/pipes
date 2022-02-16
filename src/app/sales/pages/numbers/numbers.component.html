@@ -1,1 +1,33 @@
-<p>numbers works!</p>
+<div class="text-layout">
+    <h1>Number pipes</h1>
+    <p>
+        Pipes included in Angular
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-4">
+        <p-card header="number"
+                subheader="25556465.655466 | number">
+                {{ totalSales | number}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="number"
+                subheader="25556465.655466 | number:'1.2-2'">
+                {{ totalSales | number:'1.2-2'}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="currency"
+                subheader=" 0.48 | currency">
+                {{ totalSales | currency:'MXM':'symbol-narrow'}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="percent"
+                subheader=" 0.48 | percent">
+                {{ percentage | percent:'1.2-2'}}
+        </p-card>
+    </div>
+</div>

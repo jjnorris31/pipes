@@ -5,6 +5,9 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { CommonsComponent } from './pages/commons/commons.component';
 import { CustomsComponent } from './pages/customs/customs.component';
 import { CardModule } from 'primeng/card';
+import {FieldsetModule} from 'primeng/fieldset';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { CardModule } from 'primeng/card';
   ],
   imports: [
     CommonModule,
-    CardModule
+    CardModule,
+    FieldsetModule,
+    BrowserAnimationsModule,
+    ButtonModule
   ],
   exports: [
     NumbersComponent,
