@@ -8,20 +8,29 @@ import { CardModule } from 'primeng/card';
 import {FieldsetModule} from 'primeng/fieldset';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {ButtonModule} from 'primeng/button';
+import { CamelCasePipe } from './pipes/camelCase.pipe';
+import {TableModule} from 'primeng/table';
+import {ToolbarModule} from 'primeng/toolbar';
+import { SortPipe } from './pipes/sort.pipe';
+
 
 @NgModule({
   declarations: [
     NumbersComponent,
     NoCommonsComponent,
     CommonsComponent,
-    CustomsComponent
+    CustomsComponent,
+    CamelCasePipe,
+    SortPipe
   ],
   imports: [
     CommonModule,
     CardModule,
     FieldsetModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    TableModule,
+    ToolbarModule
   ],
   exports: [
     NumbersComponent,
